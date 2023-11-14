@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body{
+        background: linear-gradient(rgb(0, 68, 255) ,rgb(0, 166, 255),rgb(0, 208, 255),rgb(0, 123, 255));
+        display: flex;
+        justify-content: center;
+         min-height: 100vh;
+         align-items: center;
+      }
+        form{
+          width:500px;
+          padding-left: 20px;
+          padding-right: 20px;
+          /* background-color: black; */
+        }
+        .d-flex p, #data{
+          border: 0;
+          border-bottom: 2px solid rgb(98, 109, 111);
+          border-radius :3px;
+        }
+        #data:focus{
+          border: 0;
+          outline: 0;
+        }
+        .d-flex i{
+          font-size: large;
+        }
+        #card{
+          display: none;
+        }
+    </style>
+  </head>
+  <body>
+      <div class="">
+        <form action="">
+          <div class="card">
+            <div class="card-body d-flex justify-content-between">
+            <input type="text"  id="data" class="form-control " placeholder="Enter data here" required style="max-width: 70%;"/>
+            <label for="data"><input type="button" onclick="register()" value="Add..." class="btn btn-primary ms-3 lh-lg ps-4 pe-4"></label></input>
+            </div>
+          </div>
+          <div class="card mt-3 card-box" id="card">
+            <div class="card-body" id="card-body">
+            </div>
+          </div>
+        </form>
+      </div>
+
+  </body>
+  <script src="./script.js">
+
+  </script>
+</html>
